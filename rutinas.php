@@ -27,7 +27,7 @@ include("conexion.php");
           <a class="nav-link" href="usuarios.php">Usuarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="rutinas.php">rutinas</a>
+          <a class="nav-link" href="rutinas.php">Planes</a>
         </li>
 
       </ul>
@@ -108,9 +108,9 @@ include("conexion.php");
                   </button>
                 </div>
                 <div class="modal-body">
-                  <input type="text" name="nombre" value="<?php echo $file ['nombre']  ?>">
-                  <input type="text" name="precio" value="<?php echo $file ['pagar']  ?>">
-                  <input type="text" name="descrip" value="<?php echo $file ['descripcion']  ?>">
+                  Plan:<input type="text" name="nombre" value="<?php echo $file ['nombre']  ?>"><br>
+                  Precio $$:    <input type="text" name="precio" value="<?php echo $file ['pagar']  ?>"><br>
+                  Descripcion:  <input type="text" name="descrip" value="<?php echo $file ['descripcion']  ?>"><br>
 
                 </div>
                 <div class="modal-footer">

@@ -27,7 +27,7 @@ include("conexion.php");
           <a class="nav-link" href="usuarios.php">Usuarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="rutinas.php">rutinas</a>
+          <a class="nav-link" href="rutinas.php">Planes</a>
         </li>
 
       </ul>
@@ -104,9 +104,10 @@ include("conexion.php");
                   </button>
                 </div>
                 <div class="modal-body">
-                  <input type="text" name="user" value="<?php echo $file ['user']  ?>">
-                  <input type="password" name="pass" value="<?php echo $file ['pass']  ?>">
-                  <input type="text" name="rol" value="<?php echo $file ['rol']  ?>">
+                  
+                  Ussuario:<input type="text" name="user" value="<?php echo $file ['user']  ?>"><br>
+                  Password:<input type="password" name="pass" value="<?php echo $file ['pass']  ?>"><br>
+                  Rol:<input type="text" name="rol" value="<?php echo $file ['rol']  ?>"><br>
 
                 </div>
                 <div class="modal-footer">
