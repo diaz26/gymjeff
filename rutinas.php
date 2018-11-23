@@ -37,7 +37,7 @@ include("conexion.php");
 <body>
   <h1>PLANES</h1>
   <?php
-
+  
   $con=conectar();
   $sql="SELECT * FROM planes";
   $result=mysqli_query($con,$sql);
