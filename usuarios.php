@@ -93,7 +93,7 @@ include("conexion.php");
           </div>
         </div>
         <div class="modal fade" id="modalmodificar<?php echo $file ['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-          <form class="" action="mod_usuario.php?id=<?php echo $file['id']; ?>" method="post">
+
             <div class="modal-dialog" role="document">
 
               <div class="modal-content">
@@ -103,22 +103,21 @@ include("conexion.php");
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
+                <form class="" action="mod_usuario.php?id=<?php echo $file['id']; ?>" method="post">
                 <div class="modal-body">
-                  
                   Ussuario:<input type="text" name="user" value="<?php echo $file ['user']  ?>"><br>
                   Password:<input type="password" name="pass" value="<?php echo $file ['pass']  ?>"><br>
                   Rol:<input type="text" name="rol" value="<?php echo $file ['rol']  ?>"><br>
-
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
-
+                </form>
               </div>
 
             </div>
-          </form>
+
         </div>
 
         <?php

@@ -12,7 +12,7 @@ include("conexion.php");
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <title>Clientes</title>
+  <title>informacion</title>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,11 +37,11 @@ include("conexion.php");
 </head>
 <body>
 
-  <h1> BIENVENIDO </h1
+  <h1> BIENVENIDO </h1>
     <?php
-    $name=$_REQUEST['user'];
+    $name=$_REQUEST['nombre'];
     $con=conectar();
-    $sql="SELECT * FROM clientes WHERE nombre='$name';
+    $sql="SELECT * FROM clientes WHERE nombre='$nombre';
     $result=mysqli_query($con,$sql);
 
     ?>

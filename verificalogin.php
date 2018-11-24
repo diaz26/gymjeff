@@ -14,7 +14,7 @@ if ($file=mysqli_fetch_array($result)) {
   if ($file['rol'] =='admin') {
     header("Location:homeadmin.php");
   }else {
-    header("Location:homeusuario.php?user=$file ['user']");
+    header("Location:homeusuario.php?id=$file ['id']");
   }
 }else {
   echo "sumerce no existe";

@@ -1,5 +1,8 @@
 <?php
 include("conexion.php");
+
+$id=$_REQUEST['id'];
+
 ?>
 
 <!doctype html>
@@ -25,7 +28,7 @@ include("conexion.php");
           <a class="nav-link" href="homeusuario.php">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="informacion.php">Mi informacion</a>
+          <a class="nav-link" href="informacion.php?nombre=$nombre">Mi informacion</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="planes.php">Planes</a>
@@ -36,10 +39,17 @@ include("conexion.php");
   </nav>
 </head>
 <body>
-
-    <h1> BIENVENIDO </h1
-      
-
+  <?php
+  $con=conectar();
+  $sql="SELECT user FROM usuarios WHERE id='$id'";
+  $result=mysqli_query($con,$sql);
+  echo $result;
+  //while ($file=mysqli_fetch_array($result)) {
+    ?>
+    <h1> BIENVENIDO <?php //echo $file ['user']; ?>  </h1>
+    <?php
+  //}
+  ?>
 
 
 
