@@ -1,15 +1,5 @@
 <?php
-include ("conexion.php");
-
-$user=$_REQUEST['user'];
-
-$con=conectar();
-
-$sql= "SELECT * FROM cliente WHERE nombre='$user'" ;
-$result=mysqli_query($con,$sql);
-echo $result;
-if ($file=mysqli_fetch_array($result)) {
-
+include("conexion.php");
 ?>
 
 <!doctype html>
@@ -48,11 +38,7 @@ if ($file=mysqli_fetch_array($result)) {
 <body>
 
     <h1> BIENVENIDO </h1
-      <?php //echo $file['nombre']  ?>
-
-    <?php
-  }
-  ?>
+      
 
 
 

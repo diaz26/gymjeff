@@ -1,6 +1,6 @@
 <?php
-include ("conexion.php");
-$id= $_REQUEST['id_plan'];
+include("conexion.php");
+$id= $_REQUEST['id'];
 
 $con=conectar();
 
