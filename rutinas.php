@@ -97,7 +97,7 @@ include("conexion.php");
           </div>
         </div>
         <div class="modal fade" id="modalmodificar<?php echo $file ['id_plan'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-          <form class="" action="mod_plan.php?id=<?php echo $file['id_plan']; ?>" method="post">
+
             <div class="modal-dialog" role="document">
 
               <div class="modal-content">
@@ -107,21 +107,22 @@ include("conexion.php");
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
+                <form class="" action="mod_plan.php?id=<?php echo $file['id_plan']; ?>" method="post">
                 <div class="modal-body">
-                  Plan:<input type="text" name="nombre" value="<?php echo $file ['nombre']  ?>"><br>
+                  Plan:<input type="text" name="nombre" value="<?php echo $file ['nombre']  ?>"> <br>
                   Precio $$:    <input type="text" name="precio" value="<?php echo $file ['pagar']  ?>"><br>
                   Descripcion:  <input type="text" name="descrip" value="<?php echo $file ['descripcion']  ?>"><br>
-
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                  <button type="submit " class="btn btn-primary">Guardar</button>
                 </div>
+                </form>
 
               </div>
 
             </div>
-          </form>
+
         </div>
 
         <?php

@@ -1,6 +1,6 @@
 <?php
 include ("conexion.php");
-$id= $_REQUEST['id_plan'];
+$id= $_REQUEST['id'];
 $xxx= $_POST['nombre'];
 $precio= $_POST['precio'];
 $des= $_POST['descrip'];
